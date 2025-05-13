@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sandu\\Desktop\\facturio\\Core\\Core.csproj": {}
+    "C:\\Users\\sandu\\Desktop\\facturio\\COre\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sandu\\Desktop\\facturio\\Core\\Core.csproj": {
+    "C:\\Users\\sandu\\Desktop\\facturio\\COre\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sandu\\Desktop\\facturio\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\sandu\\Desktop\\facturio\\COre\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\sandu\\Desktop\\facturio\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\sandu\\Desktop\\facturio\\COre\\Core.csproj",
         "packagesPath": "C:\\Users\\sandu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sandu\\Desktop\\facturio\\Core\\obj\\",
+        "outputPath": "C:\\Users\\sandu\\Desktop\\facturio\\COre\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

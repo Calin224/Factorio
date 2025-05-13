@@ -5927,8 +5927,8 @@
     },
     "Core/1.0.0": {
       "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
+      "path": "../COre/Core.csproj",
+      "msbuildProject": "../COre/Core.csproj"
     },
     "Infrastructure/1.0.0": {
       "type": "project",
@@ -5953,11 +5953,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sandu\\Desktop\\facturio\\api\\API.csproj",
+      "projectUniqueName": "C:\\Users\\sandu\\Desktop\\facturio\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\sandu\\Desktop\\facturio\\api\\API.csproj",
+      "projectPath": "C:\\Users\\sandu\\Desktop\\facturio\\API\\API.csproj",
       "packagesPath": "C:\\Users\\sandu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sandu\\Desktop\\facturio\\api\\obj\\",
+      "outputPath": "C:\\Users\\sandu\\Desktop\\facturio\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

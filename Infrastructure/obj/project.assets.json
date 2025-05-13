@@ -3818,8 +3818,8 @@
     },
     "Core/1.0.0": {
       "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
+      "path": "../COre/Core.csproj",
+      "msbuildProject": "../COre/Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3863,8 +3863,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\sandu\\Desktop\\facturio\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\sandu\\Desktop\\facturio\\Core\\Core.csproj"
+            "C:\\Users\\sandu\\Desktop\\facturio\\COre\\Core.csproj": {
+              "projectPath": "C:\\Users\\sandu\\Desktop\\facturio\\COre\\Core.csproj"
             }
           }
         }
