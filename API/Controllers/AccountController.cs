@@ -1,15 +1,12 @@
-using System;
 using System.Security.Claims;
-using System.Text;
 using System.Web;
 using API.DTOs;
 using API.Extensions;
 using Core.Entities;
-using Core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.EntityFrameworkCore;
 using Resend;
 
 namespace API.Controllers;
@@ -149,7 +146,7 @@ public class AccountController(SignInManager<AppUser> signInManager, UserManager
             return BadRequest(new { error = ex.Message });
         }
     }
-    
+
     [HttpGet("external-login")]
     public IActionResult ExternalLogin(string? returnUrl = null)
     {
@@ -157,7 +154,7 @@ public class AccountController(SignInManager<AppUser> signInManager, UserManager
         var properties = signInManager.ConfigureExternalAuthenticationProperties("Google", redirectUrl);
         return Challenge(properties, "Google");
     }
-    
+
     [HttpGet("external-login-callback")]
     public async Task<IActionResult> ExternalLoginCallback(string? returnUrl = null, string? remoteError = null)
     {
@@ -172,7 +169,6 @@ public class AccountController(SignInManager<AppUser> signInManager, UserManager
         if (result.Succeeded)
             return Ok("Autentificat cu succes prin Google.");
 
-        // Dacă utilizatorul nu există, îl creezi
         var email = info.Principal.FindFirstValue(ClaimTypes.Email);
         var firstName = info.Principal.FindFirstValue(ClaimTypes.GivenName) ?? "";
         var lastName = info.Principal.FindFirstValue(ClaimTypes.Surname) ?? "";
@@ -195,4 +191,16 @@ public class AccountController(SignInManager<AppUser> signInManager, UserManager
         return Ok("Cont creat și autentificat cu Google.");
     }
 
+    [HttpGet("all-users")]
+    public async Task<ActionResult> GetAllUsers()
+    {
+        var users = _userManager.Users.Select(u => new
+        {
+            u.Id,
+            u.FirstName,
+            u.LastName,
+            u.Email
+        });
+        return Ok(await users.ToListAsync());
+    }
 }
