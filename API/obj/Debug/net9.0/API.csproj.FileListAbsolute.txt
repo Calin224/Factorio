@@ -350,3 +350,6 @@ C:\Users\sandu\Desktop\facturio\API\obj\Debug\net9.0\API.pdb
 C:\Users\sandu\Desktop\facturio\API\obj\Debug\net9.0\API.genruntimeconfig.cache
 C:\Users\sandu\Desktop\facturio\API\obj\Debug\net9.0\ref\API.dll
 C:\Users\sandu\Desktop\facturio\api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\sandu\Desktop\facturio\api\bin\Debug\net9.0\Azure.Storage.Blobs.dll
+C:\Users\sandu\Desktop\facturio\api\bin\Debug\net9.0\Azure.Storage.Common.dll
+C:\Users\sandu\Desktop\facturio\api\bin\Debug\net9.0\System.IO.Hashing.dll

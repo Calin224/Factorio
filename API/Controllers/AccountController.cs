@@ -167,7 +167,7 @@ public class AccountController(SignInManager<AppUser> signInManager, UserManager
 
         var result = await signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false);
         if (result.Succeeded)
-            return Ok("Autentificat cu succes prin Google.");
+            return Redirect("http://localhost:4200/");   
 
         var email = info.Principal.FindFirstValue(ClaimTypes.Email);
         var firstName = info.Principal.FindFirstValue(ClaimTypes.GivenName) ?? "";
@@ -183,7 +183,7 @@ public class AccountController(SignInManager<AppUser> signInManager, UserManager
 
         var createResult = await signInManager.UserManager.CreateAsync(user);
         if (!createResult.Succeeded)
-            return BadRequest(createResult.Errors);
+            return BadRequest($"error: {createResult.Errors}");
 
         await signInManager.UserManager.AddLoginAsync(user, info);
         await signInManager.SignInAsync(user, isPersistent: false);

@@ -1,5 +1,7 @@
 using Core.Entities;
+using Core.Interfaces;
 using Infrastructure.Data;
+using Infrastructure.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Resend;
@@ -33,6 +35,9 @@ builder.Services.AddAuthentication(options => {
 });
 
 builder.Services.AddCors();
+
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped<IStorageService, StorageService>();
 
 builder.Services.AddIdentityApiEndpoints<AppUser>(options => {
         options.SignIn.RequireConfirmedAccount = false;
