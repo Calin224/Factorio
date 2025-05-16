@@ -6,6 +6,10 @@ import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { InitService } from './core/services/init.service';
 import { lastValueFrom } from 'rxjs';
 
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { providePrimeNG } from 'primeng/config';
+import Aura from '@primeng/themes/aura';
+
 function initApp(initService: InitService){
   return () => lastValueFrom(initService.init());
 }
@@ -20,6 +24,12 @@ export const appConfig: ApplicationConfig = {
       useFactory: initApp,
       multi: true,
       deps: [InitService]
-    }
+    },
+    provideAnimationsAsync(),
+    providePrimeNG({
+      theme: {
+        preset: Aura
+      }
+    })
   ]
 };

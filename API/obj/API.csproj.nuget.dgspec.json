@@ -1,40 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sandu\\Desktop\\facturio\\api\\API.csproj": {}
+    "C:\\Users\\sandu calin\\Desktop\\Factorio\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sandu\\Desktop\\facturio\\api\\API.csproj": {
+    "C:\\Users\\sandu calin\\Desktop\\Factorio\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sandu\\Desktop\\facturio\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\sandu calin\\Desktop\\Factorio\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\sandu\\Desktop\\facturio\\api\\API.csproj",
-        "packagesPath": "C:\\Users\\sandu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sandu\\Desktop\\facturio\\api\\obj\\",
+        "projectPath": "C:\\Users\\sandu calin\\Desktop\\Factorio\\api\\API.csproj",
+        "packagesPath": "C:\\Users\\sandu calin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sandu calin\\Desktop\\Factorio\\api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\sandu calin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\sandu\\Desktop\\facturio\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\sandu\\Desktop\\facturio\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\sandu calin\\Desktop\\Factorio\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\sandu calin\\Desktop\\Factorio\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -99,29 +92,22 @@
         }
       }
     },
-    "C:\\Users\\sandu\\Desktop\\facturio\\Core\\Core.csproj": {
+    "C:\\Users\\sandu calin\\Desktop\\Factorio\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sandu\\Desktop\\facturio\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\sandu calin\\Desktop\\Factorio\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\sandu\\Desktop\\facturio\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\sandu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sandu\\Desktop\\facturio\\Core\\obj\\",
+        "projectPath": "C:\\Users\\sandu calin\\Desktop\\Factorio\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\sandu calin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sandu calin\\Desktop\\Factorio\\Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\sandu calin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -175,37 +161,30 @@
         }
       }
     },
-    "C:\\Users\\sandu\\Desktop\\facturio\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\sandu calin\\Desktop\\Factorio\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sandu\\Desktop\\facturio\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\sandu calin\\Desktop\\Factorio\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\sandu\\Desktop\\facturio\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\sandu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sandu\\Desktop\\facturio\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\sandu calin\\Desktop\\Factorio\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\sandu calin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sandu calin\\Desktop\\Factorio\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\sandu calin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\sandu\\Desktop\\facturio\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\sandu\\Desktop\\facturio\\Core\\Core.csproj"
+              "C:\\Users\\sandu calin\\Desktop\\Factorio\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\sandu calin\\Desktop\\Factorio\\Core\\Core.csproj"
               }
             }
           }

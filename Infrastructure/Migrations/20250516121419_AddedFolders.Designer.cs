@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250515195350_AddedFolders")]
+    [Migration("20250516121419_AddedFolders")]
     partial class AddedFolders
     {
         /// <inheritdoc />
@@ -108,6 +108,9 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -116,7 +119,7 @@ namespace Infrastructure.Migrations
 
                     b.HasIndex("AppUserId");
 
-                    b.ToTable("Folder");
+                    b.ToTable("Folders");
                 });
 
             modelBuilder.Entity("Core.Entities.Item", b =>
@@ -284,11 +287,13 @@ namespace Infrastructure.Migrations
 
             modelBuilder.Entity("Core.Entities.Folder", b =>
                 {
-                    b.HasOne("Core.Entities.AppUser", null)
+                    b.HasOne("Core.Entities.AppUser", "AppUser")
                         .WithMany("Folders")
                         .HasForeignKey("AppUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("AppUser");
                 });
 
             modelBuilder.Entity("Core.Entities.Item", b =>
