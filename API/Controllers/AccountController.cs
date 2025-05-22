@@ -188,7 +188,7 @@ public class AccountController(SignInManager<AppUser> signInManager, UserManager
         await signInManager.UserManager.AddLoginAsync(user, info);
         await signInManager.SignInAsync(user, isPersistent: false);
 
-        return Ok("Cont creat și autentificat cu Google.");
+        return Redirect("http://localhost:4200/");
     }
 
     [HttpGet("all-users")]

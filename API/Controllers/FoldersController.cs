@@ -2,6 +2,7 @@ using System;
 using API.DTOs;
 using Core.Entities;
 using Core.Interfaces;
+using Core.Specification;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -19,7 +20,7 @@ public class FoldersController(IGenericRepository<Folder> repo, UserManager<AppU
 
         var folder = new Folder
         {
-            Name = folderDto.Name,
+            FolderName = folderDto.FolderName,
             AppUserId = user.Id,
             CreatedAt = DateTime.UtcNow
         };
@@ -30,5 +31,35 @@ public class FoldersController(IGenericRepository<Folder> repo, UserManager<AppU
             return Ok(folder);
         }
         return BadRequest("Problem creating folder");
+    }
+
+    [HttpGet("all-folders")]
+    public async Task<ActionResult<IReadOnlyList<Folder>>> GetAllFolders()
+    {
+        var user = await userManager.GetUserAsync(User);
+        if (user == null)
+        {
+            return Unauthorized();
+        }
+
+        var spec = new FolderSpecification(user.Id);
+        var folders = await repo.ListAsync(spec);
+
+        return Ok(folders);
+    }
+
+    [HttpGet("folder/{folder_id}")]
+    public async Task<ActionResult<Folder>> GetFolderByName(int folder_id)
+    {
+        var user = await userManager.GetUserAsync(User);
+        if (user == null)
+        {
+            return Unauthorized();
+        }
+
+        var spec = new FolderSpecification(user.Id, folder_id);
+        var folder = await repo.GetEntityWithSpec(spec);
+
+        return Ok(folder);
     }
 }

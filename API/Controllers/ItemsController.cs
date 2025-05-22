@@ -7,22 +7,12 @@ namespace API.Controllers;
 public class ItemsController(IGenericRepository<Folder> repo, IStorageService blobStorage) : BaseApiController
 {
     [HttpPost]
-    public async Task<ActionResult<Folder>> CreateItem(IFormFile file, int folderId, string? folderName = null)
+    public async Task<ActionResult<Folder>> CreateItem(IFormFile file, int folderId)
     {
         var folder = await repo.GetByIdAsync(folderId);
+
         if (folder == null)
-        {
-            if (string.IsNullOrEmpty(folderName))
-                return BadRequest("Folder does not exist and no name was provided to create a new one.");
-
-            folder = new Folder
-            {
-                Name = folderName,
-                Items = new List<Item>()
-            };
-
             repo.Add(folder);
-        }
 
         string fileUrl = await blobStorage.UploadFileAsync(file);
 
@@ -30,7 +20,7 @@ public class ItemsController(IGenericRepository<Folder> repo, IStorageService bl
         {
             Name = file.Name,
             Url = fileUrl,
-            ContentType = file.ContentType,
+            ContentType = file.ContentType
         };
         
         folder.Items.Add(item);

@@ -108,7 +108,7 @@ namespace Infrastructure.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("FolderName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

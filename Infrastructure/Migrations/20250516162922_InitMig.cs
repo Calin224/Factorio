@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class InitMig : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -159,7 +159,7 @@ namespace Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Folder",
+                name: "Folders",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -170,9 +170,9 @@ namespace Infrastructure.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Folder", x => x.Id);
+                    table.PrimaryKey("PK_Folders", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Folder_AspNetUsers_AppUserId",
+                        name: "FK_Folders_AspNetUsers_AppUserId",
                         column: x => x.AppUserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
@@ -194,9 +194,9 @@ namespace Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_Item", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Item_Folder_FolderId",
+                        name: "FK_Item_Folders_FolderId",
                         column: x => x.FolderId,
-                        principalTable: "Folder",
+                        principalTable: "Folders",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -241,8 +241,8 @@ namespace Infrastructure.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Folder_AppUserId",
-                table: "Folder",
+                name: "IX_Folders_AppUserId",
+                table: "Folders",
                 column: "AppUserId");
 
             migrationBuilder.CreateIndex(
@@ -276,7 +276,7 @@ namespace Infrastructure.Migrations
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "Folder");
+                name: "Folders");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");

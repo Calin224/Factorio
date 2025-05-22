@@ -4,7 +4,7 @@ namespace Core.Entities;
 
 public class Folder : BaseEntity
 {
-    public required string Name { get; set; }
+    public required string FolderName { get; set; }
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public List<Item> Items { get; set; } = [];
 

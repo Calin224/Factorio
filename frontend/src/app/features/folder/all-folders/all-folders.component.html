@@ -1,0 +1,35 @@
+@for (folder of folders; track $index) {
+  <div>
+<!--    {{ folder.createdAt | date: 'short' }}-->
+    {{folder.folderName}}
+  </div>
+}
+
+<div class="card flex justify-center">
+  <p-button (click)="showDialog()" label="Show" />
+  <p-dialog header="Create Folder" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
+    <form [formGroup]="folderForm" (ngSubmit)="onSubmit()">
+      <span class="p-text-secondary block mb-8">Create a new folder.</span>
+      <div class="flex items-center gap-4 mb-4">
+        <label for="folderName" class="font-semibold w-24">Folder Name</label>
+        <input
+          pInputText
+          id="folderName"
+          formControlName="folderName"
+          class="flex-auto"
+          autocomplete="off"
+          [class.ng-invalid]="folderForm.get('folderName')?.invalid && folderForm.get('folderName')?.touched"
+        />
+      </div>
+      @if (folderForm.get('folderName')?.invalid && folderForm.get('folderName')?.touched) {
+        <small class="p-error">Folder name is required and must be at least 3 characters.</small>
+      }
+      <div class="flex justify-end gap-4">
+        <p-button type="button" label="Cancel" (click)="visible = false" severity="secondary" />
+        <p-button type="submit" label="Submit" [disabled]="folderForm.invalid" />
+      </div>
+    </form>
+  </p-dialog>
+</div>
+
+<p-toast />

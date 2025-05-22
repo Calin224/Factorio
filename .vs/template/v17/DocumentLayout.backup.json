@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sandu\\Desktop\\Factorio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A99603F5-E236-4EA4-A12D-CBAA2BB0D846}|API\\API.csproj|c:\\users\\sandu\\desktop\\factorio\\api\\controllers\\folderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A99603F5-E236-4EA4-A12D-CBAA2BB0D846}|API\\API.csproj|solutionrelative:api\\controllers\\folderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A99603F5-E236-4EA4-A12D-CBAA2BB0D846}|API\\API.csproj|c:\\users\\sandu\\desktop\\factorio\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A99603F5-E236-4EA4-A12D-CBAA2BB0D846}|API\\API.csproj|solutionrelative:api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 220,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\sandu\\Desktop\\Factorio\\API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\sandu\\Desktop\\Factorio\\API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "API\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAmwL4AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:05:20.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FoldersController.cs",
+              "DocumentMoniker": "C:\\Users\\sandu\\Desktop\\Factorio\\API\\Controllers\\FoldersController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\FoldersController.cs",
+              "ToolTip": "C:\\Users\\sandu\\Desktop\\Factorio\\API\\Controllers\\FoldersController.cs",
+              "RelativeToolTip": "API\\Controllers\\FoldersController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:03:43.94Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

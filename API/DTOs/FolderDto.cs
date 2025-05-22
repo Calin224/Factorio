@@ -4,5 +4,5 @@ namespace API.DTOs;
 
 public class FolderDto
 {
-    public string Name { get; set; } = string.Empty;
+    public string FolderName { get; set; } = string.Empty;
 }

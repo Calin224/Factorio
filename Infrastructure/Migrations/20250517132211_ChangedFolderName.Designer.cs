@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250516115652_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20250517132211_ChangedFolderName")]
+    partial class ChangedFolderName
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -111,7 +111,7 @@ namespace Infrastructure.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("FolderName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -119,7 +119,7 @@ namespace Infrastructure.Migrations
 
                     b.HasIndex("AppUserId");
 
-                    b.ToTable("Folder");
+                    b.ToTable("Folders");
                 });
 
             modelBuilder.Entity("Core.Entities.Item", b =>

@@ -6070,32 +6070,40 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sandu calin\\.nuget\\packages\\": {}
+    "C:\\Users\\sandu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sandu calin\\Desktop\\Factorio\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\sandu\\Desktop\\Factorio\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\sandu calin\\Desktop\\Factorio\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\sandu calin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sandu calin\\Desktop\\Factorio\\API\\obj\\",
+      "projectPath": "C:\\Users\\sandu\\Desktop\\Factorio\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\sandu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sandu\\Desktop\\Factorio\\API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\sandu calin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\sandu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\sandu calin\\Desktop\\Factorio\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\sandu calin\\Desktop\\Factorio\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\sandu\\Desktop\\Factorio\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\sandu\\Desktop\\Factorio\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -6110,7 +6118,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -6156,7 +6164,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

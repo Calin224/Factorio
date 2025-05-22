@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { FolderComponent } from "../folder/folder.component";
+import {AllFoldersComponent} from '../folder/all-folders/all-folders.component';
 
 @Component({
   selector: 'app-home',
-  imports: [FolderComponent],
+  imports: [AllFoldersComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
